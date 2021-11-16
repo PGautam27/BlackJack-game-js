@@ -1,0 +1,62 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url("photo.jpg") ;
+    background-size: cover;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2cm;
+    color: goldenrod;
+}
+
+#message {
+    font-size: x-large;
+    font-style: italic;
+}
+
+#card-el{
+    font-size: x-large;
+    font-style: italic;
+}
+
+#sum-el{
+    font-size: x-large;
+    font-style: italic;
+}
+
+#startGame{
+    background-color: goldenrod;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-color: goldenrod;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+#newCard{
+    background-color: goldenrod;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-color: goldenrod;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#player-el{
+    font-size: x-large;
+    font-style: italic;
+}
