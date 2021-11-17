@@ -17,6 +17,7 @@ let playerEl = document.getElementById("player-el")
 function startGame(){
     nul()
     isAlive = true
+    hasBlackJack = false
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     sum = firstCard + secondCard
