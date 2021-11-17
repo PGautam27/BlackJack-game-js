@@ -1,7 +1,6 @@
+let inc = 0
 let player = {
     name : window.prompt("Write your name: "),
-    chips : 200
-
 }
 let cards = []
 let sum = 0
@@ -15,15 +14,21 @@ let cardEl = document.getElementById("card-el")
 let playerEl = document.getElementById("player-el")
 
 //let name = window.prompt("Write your name: ")
-playerEl.innerText = player.name +": "+ player.chips
 function startGame(){
+    nul()
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     sum = firstCard + secondCard
+    increment()
     cards.push(firstCard)
     cards.push(secondCard)
     renderGame()
+}
+function nul(){
+    if(cards.length>=1){
+        cards = []
+    }
 }
 function getRandomCard(){
     let random = (Math.random() * 13)+1
@@ -62,7 +67,22 @@ function newCard(){
     if(isAlive===true && hasBlackJack===false){
         let card = getRandomCard()
         sum+=card
+        increment()
         cards.push(card)
         renderGame()
     }
+}
+
+function increment(){
+    if(sum===21){
+        inc+=100
+    }
+    else if(sum>21){
+        inc-=5
+    }
+    display()
+}
+
+function display(){
+playerEl.innerText = player.name +": "+ inc+" points"
 }
